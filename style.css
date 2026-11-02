@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+}
+
+body {
+  background-color: #ffffff; /* Latar belakang putih bersih */
+  color: #000000;
+  padding: 20px;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.header p {
+  color: #555;
+  font-size: 14px;
+}
+
+.toolbar {
+  margin-bottom: 20px;
+}
+
+/* Tombol Download: Standar, warna dasar, dan sudut lancip */
+.btn-download {
+  background-color: #f0f0f0;
+  color: #000000;
+  border: 1px solid #767676;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 0; /* Membuat sudut lancip / kotak tegas */
+  font-size: 14px;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-download:hover {
+  background-color: #e5e5e5;
+}
+
+/* Memperbaiki data terpotong dengan scroll area 100% */
+.table-container {
+  width: 100%;
+  overflow: auto; /* Scroll horizontal dan vertikal aktif otomatis */
+  max-height: 75vh;
+  border: 1px solid #cccccc;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  white-space: nowrap; /* Mencegah teks terlipat dan memotong tabel */
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #cccccc;
+  border-right: 1px solid #eaeaea; /* Garis vertikal pembatas data */
+  font-size: 14px;
+}
+
+th {
+  background-color: #f8f8f8;
+  font-weight: 600;
+  position: sticky; /* Header tetap di atas saat digeser ke bawah */
+  top: 0;
+  z-index: 10;
+}
+
+th:last-child,
+td:last-child {
+  border-right: none;
+}
+
+.loading {
+  padding: 20px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.hidden {
+  display: none;
+}
